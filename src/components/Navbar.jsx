@@ -1,5 +1,5 @@
 // src/components/Navbar.jsx
-import { useTheme } from "../context/themeContext";
+import { useTheme } from "../context/ThemeContext";
 import { personalInfo, navLinks,WhatsApp } from "../data/portfolio";
 
 export default function Navbar() {
