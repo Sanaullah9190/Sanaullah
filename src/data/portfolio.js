@@ -5,8 +5,8 @@ export const personalInfo = {
   tagline: "Building products for the browser and the pocket.",
   description:
     "Full-stack developer focused on the MERN stack and React Native. I turn complex ideas into clean, functional web and mobile apps — handling everything from database schemas to the final pixel on screen",
-  email: "sanaullaht9190@gmail.com.com",
-  phone: "+91-8356078504",
+  email: "sanaullaht9190@gmail.com",
+  phone: "+918356078504",
   location: "Ranchi, India",
   resumeLink: "/ResumeF.pdf", // apna resume PDF link daalo
   profileImage: "/profile.png",// apni professional photo 'public' folder mein daal ke path yahan set karo
