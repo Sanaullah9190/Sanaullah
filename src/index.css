@@ -1,0 +1,15 @@
+/* src/index.css */
+@import "tailwindcss";
+
+/* Tailwind v4 default dark: variant OS preference follow karta hai.
+   Humein 'dark' class based toggle chahiye (jo themeContext.jsx
+   <html> tag pe add/remove karta hai), isliye custom variant define kar rahe hain. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
