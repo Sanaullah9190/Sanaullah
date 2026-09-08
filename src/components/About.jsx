@@ -10,7 +10,7 @@ export default function About() {
             {/* Decorative gradient blob behind the image */}
             <div className="absolute -inset-3 rounded-full bg-linear-to-tr from-teal-400 via-teal-500 to-amber-400 opacity-30 blur-xl" />
             {/* Ring + image */}
-            <div className="relative w-full h-full rounded-full p-0.75 bg-linear-to-tr from-teal-500 to-amber-500 shadow-xl shadow-teal-500/20">
+            <div className="relative w-full h-full rounded-full p-0.75  shadow-xl ">
               <img
                 src={personalInfo.profileImage}
                 alt={personalInfo.name}
