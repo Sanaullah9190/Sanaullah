@@ -8,7 +8,7 @@ export const personalInfo = {
   email: "sanaullaht9190@gmail.com.com",
   phone: "+91-8356078504",
   location: "Ranchi, India",
-  resumeLink: "/ResumeFi.pdf", // apna resume PDF link daalo
+  resumeLink: "/ResumeF.pdf", // apna resume PDF link daalo
   profileImage: "/profile.png",// apni professional photo 'public' folder mein daal ke path yahan set karo
 };
 
