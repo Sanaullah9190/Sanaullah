@@ -187,22 +187,22 @@ export const demoVideos = [
     id: 1,
     type: "mobile",
     title: "BookWorm App",
-    videoSrc: "src/assets/vedios/BookWorm.mp4",
-    poster: "/src/assets/Poster/posterBookworm.png",
+    videoSrc: "/vedios/BookWorm.mp4",
+    poster: "/Poster/posterBookworm.png",
   },
   {
     id: 2,
     type: "mobile",
     title: "Tic Tac Toe",
-    videoSrc: "src/assets/vedios/tikTak.mp4",
-    poster: "src/assets/Poster/TicTacToe_Poster.png",
+    videoSrc: "/vedios/tikTak.mp4",
+    poster: "/Poster/TicTacToe_Poster.png",
   },
   {
     id: 3,
     type: "web",
     title: "University Resource Portal",
-    videoSrc: "src/assets/vedios/Campus_App.mp4",
-    poster: "src/assets/Poster/CampusPoster.png",
+    videoSrc: "/vedios/Campus_App.mp4",
+    poster: "/Poster/CampusPoster.png",
   },
   
 ];
