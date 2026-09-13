@@ -43,7 +43,7 @@ export const highlights = [
 export const stats = [
   { value: "10+", label: "Projects shipped" },
   { value: "2", label: "Platforms — web & mobile" },
-  { value: "90%", label: "Ready for full-time roles" },
+  { value: "100%", label: "Ready for full-time roles" },
 ];
 
 // Tech stack grid — 'icon' ek emoji hai, chaho to react-icons se replace kar sakte ho

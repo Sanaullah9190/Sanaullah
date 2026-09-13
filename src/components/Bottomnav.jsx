@@ -11,7 +11,6 @@ import {
 
 // Order: Home -> About -> Skills -> Projects -> Experience -> Contact
 const navItems = [
-  { id: "home", label: "Home", icon: <FiHome className="w-5 h-5" /> },
   { id: "about", label: "About", icon: <FiUser className="w-5 h-5" /> },
   { id: "stack", label: "Skills", icon: <FiCode className="w-5 h-5" /> },
   { id: "projects", label: "Projects", icon: <FiFolder className="w-5 h-5" /> },
