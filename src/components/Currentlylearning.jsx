@@ -4,7 +4,7 @@ import { currentlyLearning } from "../data/portfolio";
 export default function CurrentlyLearning() {
   return (
     <section id="learning" className="py-20 md:py-28">
-      <div className="max-w-[1140px] mx-auto px-6 text-center">
+      <div className="max-w-285 mx-auto px-6 text-center">
         <p className="font-mono text-sm text-teal-600 dark:text-teal-400 mb-2.5">
           ~/currently-learning
         </p>
