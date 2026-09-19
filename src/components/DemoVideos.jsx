@@ -1,9 +1,8 @@
-// src/components/DemoVideos.jsx
 import { useState } from "react";
 import { demoVideos, demoFilters } from "../data/portfolio";
 
 export default function DemoVideos() {
-  // Default filter "mobile" — jaisa tumne bola
+  // Default filter "mobile" 
   const [activeFilter, setActiveFilter] = useState("mobile");
 
   const filteredVideos = demoVideos.filter((v) => v.type === activeFilter);

@@ -35,7 +35,7 @@ export default function BottomNav() {
         });
       },
       {
-        // Section tab "active" mana jayega jab wo screen ke beech wale hisse mein ho
+        
         rootMargin: "-40% 0px -50% 0px",
         threshold: 0,
       }

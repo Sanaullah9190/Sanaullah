@@ -1,4 +1,3 @@
-// src/components/Navbar.jsx
 import { useTheme } from "../context/ThemeContext";
 import { personalInfo, navLinks,WhatsApp } from "../data/portfolio";
 
@@ -14,7 +13,7 @@ export default function Navbar() {
           <span className="text-teal-600 dark:text-teal-400">.dev</span>
         </a>
 
-        {/* Desktop nav links — mobile pe ab bottom nav bar use hota hai */}
+        {/* Desktop nav links */}
         <div className="hidden md:flex gap-8 text-sm text-gray-500 dark:text-gray-400">
           {navLinks.map((link) => (
             <a

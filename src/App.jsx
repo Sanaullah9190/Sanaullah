@@ -10,6 +10,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import DemoVideos from "./components/DemoVideos";
 import Bottomnav from "./components/Bottomnav";
+import Currentlylearning from "./components/Currentlylearning";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Hero />
         <About />
         <TechStack />
+        <Currentlylearning />
         <Projects />
         <DemoVideos />
         <ExperienceCard />

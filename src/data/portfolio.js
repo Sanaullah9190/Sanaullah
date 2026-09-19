@@ -8,11 +8,11 @@ export const personalInfo = {
   email: "sanaullaht9190@gmail.com",
   phone: "+918356078504",
   location: "Ranchi, India",
-  resumeLink: "/ResumeF.pdf", // apna resume PDF link daalo
-  profileImage: "/profile.png",// apni professional photo 'public' folder mein daal ke path yahan set karo
+  resumeLink: "/Sanaullah_resume.pdf", 
+  profileImage: "/profile.png",
 };
 
-// Hero section mein typing animation ke liye rotating roles
+
 export const roles = [
   "Full Stack Developer",
   "MERN & React Native Dev",
@@ -46,7 +46,6 @@ export const stats = [
   { value: "100%", label: "Ready for full-time roles" },
 ];
 
-// Tech stack grid — 'icon' ek emoji hai, chaho to react-icons se replace kar sakte ho
 // export const techStack = [
 //   { name: "JavaScript", icon: "🔷" },
 //   { name: "React", icon: "⚛" },
@@ -65,31 +64,50 @@ export const stats = [
 export const techStackCategories = [
   {
     id: 1,
-    title: "Frontend",
-    icon: "🌐",
-    items: ["JavaScript (ES6+)", "React.js", "Next.Js", "React Native", "Tailwind CSS", "HTML5 / CSS3", "redux Tolkit"],
+    title: "Mobile Development",
+    icon: "📱",
+    items: ["React Native CLI","Expo","React Navigation","AsyncStorage","MMKV"],
   },
   {
     id: 2,
-    title: "Backend",
+    title: "Backend Development",
     icon: "⚙️",
-    items: ["Go-Lang", "Node.js", "Express.js", "RESTfull APIs", "JWT Authentication", "Multer"],
+    items: ["Node.js", "Express.js", "RESTful APIs", "JWT Authentication", "Multer","bcrypt"],
   },
   {
     id: 3,
-    title: "Database",
+    title: "Frontend Development",
+    icon: "🌐",
+    items: ["React.js", "Next.Js", "Redux Toolkit", "Tailwind CSS", "HTML5 / CSS3"],
+  },
+  {
+    id: 4,
+    title: "Databases",
     icon: "🗄️",
     items: ["MongoDB", "Mongoose ODM"],
   },
   {
-    id: 4,
-    title: "Tools & Others",
+    id: 5,
+    title: "Languages",
+    icon: "💻",
+    items: ["JavaScript (ES6+)", "Go-Lang","TypeScript"],
+  },
+  {
+    id: 6,
+    title: "Tools & DevOps",
     icon: "🛠️",
-    items: ["Vs Code", "Git / GitHub", "Postman", "Firebase", "Render / Vercel", "Cloudinary", "AI Tools"],
+    items: ["VS Code", "Git / GitHub", "Postman", "Firebase", "Cloudinary", "AI Tools"],
   },
 ];
 
-// Projects — type: "web" ya "mobile" (isi se filter kaam karta hai)
+export const currentlyLearning = [
+  "PostgreSQL",
+  "System design",
+  "Next.JS"
+  
+];
+
+// Projects — type: "web" ya "mobile" 
 export const projects = [
   {
     id: 1,
@@ -171,6 +189,25 @@ export const projects = [
     githubLink: "https://github.com/Sanaullah9190/Tik-tak-toe",
     linkLabel: "",
   },
+  {
+    id: 5,
+    type: "web",
+    tagLabel: "web App",
+    title: "AI-Powered PDF Compressor",
+    description:
+      "I built the Smart AI-Powered PDF Compressor to solve this exact real-world problem.This tool dynamically adapts to a user-specified Target Size (e.g., 2MB, 1MB). It features a Built-in AI Layer that scans the document structure beforehand. If it detects a scanned document or image-heavy being compressed below a safe threshold, it alerts the user with an intelligent quality warning and recommends a safer target size so neither images nor text get ruined.",
+    features: [
+      "Optimizes PDFs iteratively to match user-defined MB targets.",
+      "Scans files to classify text-heavy vs. image-heavy content instantly.",
+      "Warns when target sizes risk ruining image clarity and suggests safe limits.",
+      "Ghostscript Engine Runs a 3-tier fallback sequence for optimal quality-to-size ratio.",
+      "Instantly purges temporary processing files to save memory.",
+    ],
+    tech: ["Ghostscript","PDF-Parse", "Node.js", "JavaScript(ES6+)", "FS Promises","Express","Axios"],
+    liveLink: "",
+    githubLink: "https://github.com/Sanaullah9190/AiPdfSizeCompressor",
+    linkLabel: "",
+  },
 ];
 
 export const projectFilters = [
@@ -180,8 +217,7 @@ export const projectFilters = [
 ];
 
 // ---- Screen-recording / demo videos section ----
-// type: "web" -> laptop-frame style, "mobile" -> phone/reel-style vertical
-// videoSrc: apni video 'public/videos/' folder mein daalo aur path yahan set karo
+
 export const demoVideos = [
   {
     id: 1,
@@ -207,7 +243,7 @@ export const demoVideos = [
   
 ];
 
-// Sirf do options — "all" nahi, aur default "mobile" rahega (component mein set hai)
+
 export const demoFilters = [
   { label: "mobile", value: "mobile" },
   { label: "web", value: "web" },

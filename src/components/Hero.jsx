@@ -1,4 +1,3 @@
-// src/components/Hero.jsx
 import { useEffect, useState } from "react";
 import { personalInfo, roles } from "../data/portfolio";
 
@@ -79,7 +78,7 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right: browser + phone mockup — ab mobile pe bhi dikhega, text ke neeche stacked */}
+        {/* Right: browser + phone mockup */}
         <div className="relative h-75 sm:h-95 md:h-105 mt-10 md:mt-0">
           {/* Browser mockup */}
           <div className="absolute top-2 left-0 w-[75%] sm:w-full max-w-95 bg-gray-50 dark:bg-[#161A26] border border-gray-200 dark:border-[#242A3A] rounded-xl overflow-hidden shadow-2xl animate-[float_5s_ease-in-out_infinite]">

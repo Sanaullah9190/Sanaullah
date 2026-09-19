@@ -3,7 +3,7 @@ import { FiMail, FiPhone, FiMapPin, FiExternalLink } from "react-icons/fi";
 import { FaGithub, FaLinkedin , FaWhatsapp } from "react-icons/fa";
 import { contactDetails, socialLinks } from "../data/portfolio";
 
-// react-icons se icons — 'type' field portfolio.js mein isi naam se match hota hai
+// react-icons se icons
 const icons = {
   email: <FiMail className="w-5 h-5" />,
   phone: <FiPhone className="w-5 h-5" />,

@@ -1,10 +1,9 @@
-// src/components/Projects.jsx
 import { useState } from "react";
 import { projects, projectFilters } from "../data/portfolio";
 
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState("all");
-  const [selectedProject, setSelectedProject] = useState(null); // modal ke liye
+  const [selectedProject, setSelectedProject] = useState(null); 
 
   const filteredProjects =
     activeFilter === "all"
@@ -14,14 +13,14 @@ export default function Projects() {
   return (
     <section id="projects" className="py-24 md:py-32">
       <div className="max-w-285 mx-auto px-6">
-        <p className="font-mono text-sm text-teal-600 dark:text-teal-400 mb-2.5">
+        <p className="font-mono text-sm text-teal-600 dark:text-teal-400 mb-2.5 text-center">
           ~/projects
         </p>
-        <h2 className="text-3xl md:text-4xl font-bold mb-9 text-gray-900 dark:text-gray-100">
+        <h2 className="text-3xl md:text-4xl font-bold mb-9 text-gray-900 dark:text-gray-100 text-center">
           Selected work
         </h2>
 
-        {/* Filter buttons — same as pehle */}
+        {/* Filter buttons */}
         <div className="flex gap-3 mb-9">
           {projectFilters.map((filter) => (
             <button
@@ -45,7 +44,7 @@ export default function Projects() {
               key={project.id}
               className="relative bg-gray-50 dark:bg-[#161A26] border border-gray-200 dark:border-[#242A3A] rounded-2xl p-6 hover:-translate-y-1.5 hover:border-teal-500 hover:shadow-2xl hover:shadow-teal-500/10 transition-all"
             >
-              {/* "More" button — top-right, khol ta hai full detail modal */}
+              {/* "More" button  */}
               <button
                 onClick={() => setSelectedProject(project)}
                 aria-label={`View full details of ${project.title}`}
@@ -77,6 +76,7 @@ export default function Projects() {
                 {project.liveLink && (
                   <a
                     href={project.liveLink}
+                    target="blank"
                     className="text-gray-800 dark:text-gray-200 border-b border-gray-300 dark:border-[#242A3A] hover:text-teal-600 dark:hover:text-teal-400 hover:border-teal-500 pb-0.5 transition-colors"
                   >
                     {project.linkLabel}
@@ -84,6 +84,7 @@ export default function Projects() {
                 )}
                 <a
                   href={project.githubLink}
+                  target="blank"
                   className="text-gray-800 dark:text-gray-200 border-b border-gray-300 dark:border-[#242A3A] hover:text-teal-600 dark:hover:text-teal-400 hover:border-teal-500 pb-0.5 transition-colors"
                 >
                   GitHub
@@ -94,7 +95,7 @@ export default function Projects() {
         </div>
       </div>
 
-      {/* Full-detail panel — dono devices pe same: neeche se upar slide, full-width, andar scrollable */}
+      {/* Full-detail panel text-center */}
       {selectedProject && (
         <div
           className="fixed inset-0 z-60 bg-black/70 backdrop-blur-sm flex items-end justify-center"
@@ -168,6 +169,7 @@ export default function Projects() {
               <div className="flex flex-wrap gap-4">
                 <a
                   href={selectedProject.githubLink}
+                  target="blank"
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold border border-gray-300 dark:border-[#242A3A] text-gray-700 dark:text-gray-200 hover:border-teal-500 hover:-translate-y-0.5 transition-all"
                 >
                   <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
@@ -178,6 +180,7 @@ export default function Projects() {
                 {selectedProject.liveLink && (
                   <a
                     href={selectedProject.liveLink}
+                    target="blank"
                     className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold bg-teal-500 text-white hover:-translate-y-0.5 transition-transform"
                   >
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4">
